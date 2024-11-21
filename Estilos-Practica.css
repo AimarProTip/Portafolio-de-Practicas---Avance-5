@@ -1,0 +1,69 @@
+*{
+    font-family: Indie Flower;
+}
+.titulo {
+    font-family: Tiny5;
+    font-size: 25px;
+    background-color: #c6b9cd;
+}
+.title{
+    font-family: Permanent Marker;
+    font-size: 30px;
+    background-color: #9C92A3;
+}
+[type="text"]{
+    border: 2px solid #0F5257;
+}
+input[type]{
+    background-color: #9C92A3;
+}
+input[type="text"]:focus{
+    background-color: #0F5257;
+}
+#headings{
+    background-color: #d6d3f0;
+}
+#phrasing{
+    background-color: #d6d3f0;
+}
+#forms{
+    background-color: #d6d3f0;
+}
+#embeds{
+    background-color: #d6d3f0;
+}
+a[href^="https://"]{
+    font-size: 20px;
+    color: #0b3142;
+    border: 2px solid #0F5257;
+}
+button:active{
+    background-color: #d6d3f0;
+}
+button{
+    background-color: #0F5257;
+}
+a:hover{
+    color: #E4C1F9;
+}
+ul li::marker{
+    content: "🍨";
+}
+ul li ul li::marker{
+    content: "🍗";
+}
+ul li ul li ul li::marker{
+    content: "🍡";
+}
+.menu{
+    background-color: #c6b9cd;
+}
+.list{
+    background-color: #d6d3f0;
+}
+input:focus {
+    border: 3px solid #0b3142;
+}
+input:disabled {
+    color:#d6d3f0;
+}

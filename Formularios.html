@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <h2>Formulario con POST</h2>
+    <form method="POST" action="Formularios.html"> 
+        <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="Nombre" placeholder="Nombre" required>
+        <br>
+        <label for="Apellido1">Apellido Paterno:</label>
+        <input type="text" name="Apellido1" placeholder="Apellido Paterno" required>
+        <br>
+        <label for="Apellido2">Apellido Materno:</label> 
+        <input type="text" name="Apellido2" placeholder="Apellido Materno" required>
+        </fieldset>
+        <br>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <input type="password" name="clave" placeholder="Contraseña"/>
+        <br>
+        <input type="file" name="archivo"/>
+        <br>
+        <input type="checkbox" name="acepto"/>
+        <br>
+        <div>
+            <label for="masculino">
+            <input type="radio" id="masculino" name="genero" value="M" checked/>
+            Masculino
+            </label>
+        </div>
+        <div>
+            <label for="femenino">
+                <input type="radio" id="femenino" name="genero" value="F">
+                Femenino
+            </label>
+        </div>
+        <div>
+            <label for="no especificado">
+                <input type="radio" id="no especificado" name="genero" value="NE">
+                No especificado
+            </label>
+        </div>
+        <br>
+        <input type="hidden" name="folio"/>
+        <input type="email" name="correo" placeholder="Correo"/>
+        <br>
+        <input type="url" name="página" placeholder="Página"/>
+        <br>
+        <input type="number" name="numero" placeholder="Elige un numero"/>
+        <br>
+        <input type="range" name="rango"/>
+        <br>
+        <input type="date" name="fecha"/>
+        <br>
+        <input type="month" name="mes"/>
+        <br>
+        <input type="week" name="semana"/>
+        <br>
+        <input type="time" name="hora"/>
+        <br>
+        <input type="datetime-local" name="fecha y hora"/>
+        <br>
+        <input type="color" name="color"/>
+        <br>
+        <input type="search" name="búsqueda" placeholder="Barra de búsqueda"/>
+        <br>
+        <input type="tel" name="teléfono" placeholder="Numero de teléfono"/>
+        <br>
+        <br>
+        <textarea name="comentario" rows="4" cols="50">
+            Escribe aquí tu comentario...
+        </textarea>
+        <br>
+        <select name="pais">
+            <option value="MX" selected> México</option>
+            <option value="US"> Estados Unidos</option>
+            <option value="CA"> Canadá</option>
+        </select>
+        <br>
+        <br>
+        <select name="colores" multiple size="2">
+            <option value="Rojo"> Rojo</option>
+            <option value="Verde"> Verde</option>
+            <option value="Azul"> Azul</option>
+        </select>
+        <br>
+        <br>
+        <div>
+            <label for="colores">Colores</label>
+            <select name="Colores" id="colores">
+                <optgroup label="Colores Primarios">
+                        <option value="Rojo"> Rojo</option>
+                        <option value="Verde"> Verde</option>
+                        <option value="Azul"> Azul</option>
+                </optgroup>
+                <optgroup label="Colores Secundarios">
+                    <option value="amarillo"> Amarillo</option>
+                    <option value="naranja"> Naranja</option>
+                    <option value="violeta"> Violeta</option>
+            </optgroup>
+            </select>
+        </div>
+        <br>
+        <button type="submit">
+            <img src="assets/corazon (1).png" alt="Icono">
+             Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button">Cancelar</button>
+        <br>
+        <br>
+        <input list="colores" name="color">
+        <datalist id="colores">
+            <option value="Rojo"/>
+            <option value="Verde"/>
+            <option value="Azul"/>
+        </datalist>
+        <output name="resultado" for="numero">0</output>
+        <progress value="75" max="100">75%</progress>
+        <meter value="0.5" min="0" max="1">50%</meter>
+        <details>
+            <summary>Detalles</summary>
+            <p>Contenido de los detalles...</p>
+        </details>
+
+
+    </form>
+    <!-- Componentes del formulario -->
+    <h2>Formulario con GET</h2>
+    <form method="GET" action="procesa.php">
+        <input type="text" name="Nombre" placeholder="Nombre" required>
+        <br>
+        <input type="text" name="Apellido1" placeholder="Apellido Paterno" required>
+        <br>
+        <input type="text" name="Apellido2" placeholder="Apellido Materno" required>
+    </form>
+    <!-- Componentes del formulario -->
+</body>
+</html>

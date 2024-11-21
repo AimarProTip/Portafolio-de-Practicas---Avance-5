@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI</title>
+    
+    <script src="js/pokeapi.js" defer></script>
+ 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css"
+  >
+    <style>
+        body{
+            font-weight: bolder ;
+            background-color: red;
+        }
+    </style>
+</head>
+<h1 align="center">Pokedex</h1>
+<td>
+    <article align="center">
+        <img
+        src="assets/fgfgfg.png"
+        alt="Foto para CV"
+        width="400"
+        loading="lazy"
+      />
+    </article>
+</tr>
+<h2 align="center">Aqui Podras encontrar cualquier Pokemon que te guste:</h2>
+<body>
+    <main class="container">
+        
+        <form id="search-form">
+            <label for="pokemon-name-input">Pon el nombre del pokemon:</label>
+            <input type="text" id="pokemon-name-input" placeholder="Escribe el pokemon" required>
+            <button type="submit">Encontrar</button>
+        </form>
+        <article align="center">
+            <dl>
+                <dt>Imagen</dt>
+                <dd>
+                    <img align="center" id="pokemon-image" src="" alt="Imagen del Pokémon">
+                </dd>
+                <dt>Nombre</dt>
+                <dd id="pokemon-name"></dd>
+                <dt align="center">Tipos</dt>
+                <dd align="center" id="pokemon-types"></dd>
+                <dd align="center" id="pokemon-additional-info"></dd>
+            </dl>
+            <h2>Sound :</h2>
+            <div class="audio-container">
+                <audio
+                    controls
+                    src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg"
+                    id="audio-pokemon"
+                ></audio>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
